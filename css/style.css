@@ -1,18 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:ital,wght@1,500&family=Roboto+Mono:wght@200&family=Roboto+Serif:wght@300;400&display=swap");
+/* 
+font-family: 'Dancing Script', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Roboto Serif', sans-serif;
+*/
+
+* {
+    transition: 250ms;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(110, 110, 110);
+}
+
 body {
-  background-color: #ffffff;
+    overflow: overlay;
+    margin: 0;
+    padding: 0;
+    /* margin: 0 0 0 0; */
 }
 
-hr {
-  border-style: dotted none none none;
-  border-color: #f76b8a;
-  border-width: 7px;
-  width: 7%;
+.w80 {
+    width: 80%;
+    margin: auto;
 }
 
-h1 {
-  color: #66bfbf;
+.centre {
+    margin: auto;
+}
+
+.sec1 {
+    background-color: #d5fefd;
+    background-image: linear-gradient(315deg, #d5fefd 0%, #fffcff 74%);
+    margin: auto;
+    height: 950px;
+}
+
+.sec2 {
+    padding-top: 100px;
+    background-color: linear-gra;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    /* background-color: transparent; */
+    text-align: center;
+    background: linear-gradient(rgba(255, 255, 255, 0.171), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* border: 2px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.144); */
+}
+
+.nav {
+    cursor: pointer;
+    background-color: transparent;
+    padding: 16px 30px;
+    margin-top: auto;
+    margin-bottom: 0;
+    font-size: 28px;
+    display: inline-block;
+    font-style: bold;
+    text-decoration: none;
+    font-family: "Roboto Mono", monospace;
+    color: rgb(109, 109, 109);
+    border: 3px solid transparent;
+}
+
+.nav:hover {
+    transition: 800ms;
+    color: rgb(0, 0, 0);
+    transition: 150ms;
+    border-bottom: 3px solid rgb(2, 186, 199);
+}
+
+.themeicon {
+    cursor: pointer;
+    width: 50px;
+    position: absolute;
+    right: 5%;
+    top: 13px;
+}
+
+.themeicon:hover {
+    cursor: pointer;
+    width: 53px;
+}
+
+.myName {
+    font-size: 72px;
+    background: -webkit-linear-gradient(
+        60deg,
+        rgb(195, 0, 255),
+        rgb(0, 119, 255)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 90px;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    padding-top: 300px;
+    padding-bottom: 100px;
+    margin: 0;
+    /* margin-top: 200px; */
+}
+
+.name:hover {
+    transition: 1s;
+    font-size: 72px;
+    background: -webkit-linear-gradient(
+        60deg,
+        rgb(195, 0, 255),
+        rgb(0, 234, 255)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 90px;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+}
+
+.logoimg {
+    width: 90px;
+    position: absolute;
+    top: 9px;
+    left: 14%;
+}
+
+.logoimg:hover {
+    width: 95px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 h3 {
-  color: #0091a1;
+    text-shadow: 2px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 25px;
+    text-align: center;
+    color: #47c3c1;
+}
+
+.button-down {
+    width: 100px;
+}
+
+.arrow {
+    margin-top: 200px;
+    margin: auto;
+    width: 100px;
+    padding-top: 150px;
+}
+
+.wrk-header {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+}
+
+.wrk-header {
+    
+}
+
+.projectCards {
+    cursor: pointer;
+    margin: 100px auto;
+    width: 850px;
+    height: 320px;
+    border-radius: 30px;
+    /* border: 2px solid red; */
+    -webkit-box-shadow: 8px 12px 22px 8px rgba(230, 230, 230, 1);
+    -moz-box-shadow: 8px 12px 22px 8px rgba(230, 230, 230, 1);
+    box-shadow: 8px 12px 22px 8px rgba(230, 230, 230, 1);
+}
+
+.projectCards:hover {
+    -webkit-box-shadow: 11px 16px 28px 16px rgba(235,235,235,1);
+-moz-box-shadow: 11px 16px 28px 16px rgba(235,235,235,1);
+box-shadow: 11px 16px 28px 16px rgba(235,235,235,1);
 }
