@@ -11,8 +11,8 @@ font-family: 'Poppins', sans-serif;
     font-family: "Poppins", sans-serif;
 }
 
-ul {
-    text-decoration: none;
+ul li {
+    list-style: none;
 }
 
 body {
@@ -20,9 +20,17 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #36096d;
-    background-image: linear-gradient(315deg, #36096d 0%, #009797 74%);
+    background-image: url(https://unsplash.it/1920?image=1021);
 }
+
+/* 
+115 
+114/g
+126 126/g
+171 171/g
+218
+1021
+*/
 
 .container {
     position: relative;
@@ -38,9 +46,29 @@ body {
     position: relative;
     width: 280px;
     height: 400px;
-    margin: 30px;
+    margin: 50px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-top: 2px solid rgba(255, 255, 255, 0.5);
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
 }
 
+.container .card .content {
+    padding: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
 
+.container .card .content {
+    position: absolute;
+    top: -30px;
+    right: 30px;
+    font-size: 8em;
+    
+}
