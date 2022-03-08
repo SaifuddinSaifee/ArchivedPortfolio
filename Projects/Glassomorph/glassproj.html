@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,47 +8,59 @@
     <link rel="stylesheet" href="glassprojcss.css">
     <title>Saifuddin Saifee | Glassmorph</title>
 </head>
+
 <body>
+    <h2 class="heading">Hover Mouse Over the <span class="white">Glass Cards</span></h2>
     <div class="container">
         <div class="card">
             <div class="content">
                 <h2>01</h2>
                 <h3>Regular</h3>
-                <div class="price">$100</div>
+                <div class="price">$79/year</div>
                 <ul>
-                    <li>10 Webpages</li>
-                    <li>30Gb SSD</li>
+                    <li>3 Webpages</li>
+                    <li>10Gb SSD</li>
                     <li>Domain Name</li>
                 </ul>
+                <a href="#">Read More</a>
             </div>
         </div>
 
         <div class="card">
             <div class="content">
-                <h2>01</h2>
+                <h2>02</h2>
                 <h3>Regular</h3>
-                <div class="price">$100</div>
+                <div class="price">$149/year</div>
                 <ul>
                     <li>10 Webpages</li>
                     <li>30Gb SSD</li>
                     <li>Domain Name</li>
                 </ul>
+                <a href="#">Read More</a>
             </div>
         </div>
 
         <div class="card">
             <div class="content">
-                <h2>01</h2>
+                <h2>03</h2>
                 <h3>Regular</h3>
-                <div class="price">$100</div>
+                <div class="price">$299/year</div>
                 <ul>
-                    <li>10 Webpages</li>
-                    <li>30Gb SSD</li>
+                    <li>Unlimited Webpages</li>
+                    <li>Unlimited SSD</li>
                     <li>Domain Name</li>
                 </ul>
+                <a href="#">Read More</a>
             </div>
         </div>
     </div>
-
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 10,
+            speed: 400
+        });
+    </script>
 </body>
+
 </html>
