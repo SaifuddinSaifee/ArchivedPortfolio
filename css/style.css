@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Poppins:ital,wght@1,500&family=Roboto+Mono:wght@200&family=Roboto+Serif:wght@300;400&display=swap');/* 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Poppins:ital,wght@0,500;1,500&family=Roboto+Mono:wght@300;400&family=Roboto+Serif:wght@300;400&display=swap');
+/* 
 font-family: 'Cinzel', serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Roboto Mono', monospace;
@@ -37,11 +38,17 @@ body {
     overflow: overlay;
     margin: 0;
     padding: 0;
+    background-color: rgba(243, 243, 243, 0.24);
     /* margin: 0 0 0 0; */
 }
 
-.w50 {
-    width: 50%;
+.w80 {
+    width: 80%;
+    margin: auto;
+}
+
+.w66 {
+    width: 66%;
     margin: auto;
 }
 
@@ -51,8 +58,9 @@ body {
 
 .sec1 {
     /* background-color: gray; */
-    background-color: #d5fefd;
-    background-image: linear-gradient(315deg, #d5fefd 0%, #fffcff 74%);
+    /* background-color: #d5fefd;
+    background-image: linear-gradient(315deg, #d5fefd 0%, #fffcff 74%); */
+    background-image: url(/images/cover4.png);
     margin: auto;
     height: 950px;
 }
@@ -64,14 +72,15 @@ body {
 
 .navbar {
     width: 100%;
+    height: inherit;
     position: fixed;
     /* background-color: transparent; */
-    text-align: center;
+    text-align: right;
     background: linear-gradient(rgba(255, 255, 255, 0.171), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 2px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.144);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /* border: 2px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.144); */
 }
 
 .nav {
@@ -171,24 +180,15 @@ h3 {
     width: 100px;
 }
 
-.arrow {
-    margin-top: 200px;
-    margin: auto;
-    width: 100px;
-    padding-top: 150px;
-}
-
 .wrk-header {
     text-align: center;
     font-family: "Poppins", sans-serif;
     font-size: 28px;
 }
 
-.wrk-header {
-    
-}
-
 .projectCards {
+    background-color: white;
+    padding: 20px;
     cursor: pointer;
     margin: 100px auto;
     width: 850px;
@@ -204,4 +204,25 @@ h3 {
     -webkit-box-shadow: 11px 16px 28px 16px rgba(235,235,235,1);
 -moz-box-shadow: 11px 16px 28px 16px rgba(235,235,235,1);
 box-shadow: 11px 16px 28px 16px rgba(235,235,235,1);
+}
+
+.projimg {
+    height: inherit;
+    border-radius: inherit;
+    float: left;
+    margin-right: 20px;
+}
+
+.projDes {
+}
+
+.projDescHead {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    color: rgb(73, 73, 73);
+}
+
+.projInfo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
 }

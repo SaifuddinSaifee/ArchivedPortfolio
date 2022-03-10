@@ -20,7 +20,9 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(https://unsplash.it/1920?image=171);
+    background-color: #b8c6db;
+/* background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%); */
+    background-image: url(/Projects/Glassomorph/shapesBackground.jpg);
 }
 
 /* 
@@ -49,20 +51,22 @@ body {
     margin: 50px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.144);
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     border-top: 2px solid rgba(255, 255, 255, 0.5);
     border-left: 2px solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(100px);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .heading {
     position: absolute;
     top: 100px;
     font-size: 30px;
+    color: #92acd4;
 }
 
 .white {
@@ -77,8 +81,8 @@ body {
 .container .card .content {
     padding: 100px;
     text-align: center;
-    transform: translateY(100px);
-    opacity: 0;
+    transform: translateY(0px); 
+    opacity: 1;
     transition: 500ms;
 }
 
@@ -88,7 +92,7 @@ body {
 }
 
 .container .card .content h2{
-    color: rgba(0, 0, 0, 0.096);
+    color: rgba(255, 255, 255, 0.096);
     position: absolute;
     top: -10px;
     right: 30px;
