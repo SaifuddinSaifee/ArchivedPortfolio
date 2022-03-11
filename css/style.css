@@ -60,7 +60,7 @@ body {
     /* background-color: gray; */
     /* background-color: #d5fefd;
     background-image: linear-gradient(315deg, #d5fefd 0%, #fffcff 74%); */
-    background-image: url(/images/cover4.png);
+    background-image: url(/cover4.png);
     margin: auto;
     height: 950px;
 }
