@@ -107,6 +107,10 @@ body {
     z-index: 1;
 }
 
+.container .card .content .price {
+    color: greenyellow;
+}
+
 .container .card .content ul {
     font-size: 1em;
     color: #fff;
@@ -123,5 +127,4 @@ body {
     color: #000;
     border-radius: 20px;
     text-decoration: none;
-    
 }
