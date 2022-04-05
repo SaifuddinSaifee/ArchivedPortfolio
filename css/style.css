@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Poppins:ital,wght@0,500;1,500&family=Roboto+Mono:wght@300;400&family=Roboto+Serif:wght@300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Poppins:ital,wght@0,400;0,500;1,300;1,900&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Roboto+Serif:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
 /* 
-font-family: 'Cinzel', serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Roboto Mono', monospace;
-font-family: 'Roboto Serif', serif;
+font-family: 'Cinzel', serif; 500
+font-family: 'Poppins', sans-serif; 300i 400 500 900i
+font-family: 'Roboto Mono', monospace; 300 300i 400 400i 500
+font-family: 'Roboto Serif', serif; 300 300i 400 400i 500
 */
 
 * {
@@ -66,12 +66,7 @@ body {
     height: 950px;
 }
 
-.sec2 {
-    padding-top: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .navbar {
     width: 100%;
@@ -141,31 +136,6 @@ body {
     color: rgb(0, 0, 0);
 }
 
-/* .name:hover {
-    transition: 1s;
-    font-size: 72px;
-    background: -webkit-linear-gradient(
-        60deg,
-        rgb(195, 0, 255),
-        rgb(0, 234, 255)
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 90px;
-    text-align: center;
-} */
-
-.logoimg {
-    width: 90px;
-    position: absolute;
-    top: 9px;
-    left: 14%;
-}
-
-.logoimg:hover {
-    width: 95px;
-}
-
 a {
     text-decoration: none;
     color: inherit;
@@ -174,20 +144,28 @@ a {
 h3 {
     text-shadow: 2px;
     font-family: "Roboto Mono", monospace;
+    font-weight: 400;
     font-size: 25px;
     text-align: center;
     color: black;
     /* color: #47c3c1; */
 }
 
-.button-down {
-    width: 100px;
+.sec2 {
+    /* padding-top: 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .wrk-header {
-    text-align: center;
+    margin: 0;
+    text-align: left;
     font-family: "Poppins", sans-serif;
-    font-size: 28px;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 150px;
+    color: rgba(0, 128, 255, 0.203);
 }
 
 .projectCards {
@@ -255,6 +233,7 @@ h3 {
     border-radius: 30px;
     background-color: rgb(28, 28, 28);
 }
+
 /* ## */
 /* ## */
 /* ## */
@@ -266,6 +245,7 @@ h3 {
 /* ## */
 /* ## */
 /* ## */
+
 @media only screen and (max-width: 1300px) {
     body {
         overflow: overlay;
@@ -275,14 +255,14 @@ h3 {
         /* margin: 0 0 0 0; */
     }
 
-    .w80 {
-        width: 80%;
-        margin: auto;
-    }
-
-    .w66 {
-        width: 66%;
-        margin: auto;
+    .wrk-header {
+        margin: 0;
+        text-align: left;
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        font-style: italic;
+        font-size: 112px;
+        color: rgba(0, 128, 255, 0.203);
     }
 
     .centre {
@@ -374,12 +354,6 @@ h3 {
         /* color: #47c3c1; */
     }
 
-    .wrk-header {
-        text-align: center;
-        font-family: "Poppins", sans-serif;
-        font-size: 21px;
-    }
-
     .projectCards {
         background-color: white;
         padding: 20px;
@@ -439,6 +413,17 @@ h3 {
     }
 }
 
+/* # */
+/* # */
+/* # */
+/* # */
+/* # */
+/* # */
+/* # */
+/* # */
+/* # */
+/* # */
+/* # */
 
 @media only screen and (max-width: 850px) {
     .navbar {
