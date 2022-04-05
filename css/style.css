@@ -52,7 +52,7 @@ body {
     margin: auto;
 }
 
-.centre {
+.centre { 
     margin: auto;
 }
 
@@ -61,13 +61,17 @@ body {
     /* background-color: #d5fefd;
     background-image: linear-gradient(315deg, #d5fefd 0%, #fffcff 74%); */
     background-image: url(https://raw.githubusercontent.com/SaifuddinSaifee/Portfolio/master/cover4.png);
+    background-repeat: no-repeat;
+    background-size: auto;
     margin: auto;
     height: 950px;
 }
 
 .sec2 {
     padding-top: 100px;
-    background-color: linear-gra;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar {
@@ -237,6 +241,44 @@ h3 {
     border-radius: inherit;
 }
 
+.sec3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linksBar {
+    display: flex;
+
+    margin: 50px;
+    width: 400px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: rgb(28, 28, 28);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1300px) {
     body {
         overflow: overlay;
@@ -392,5 +434,13 @@ h3 {
         font-size: 20px;
         font-weight: 200;
         color: #888;
+    }
+    
+    .linksBar {
+        margin: 37.5px;
+        width: 375px;
+        height: 45px;
+        border-radius: 22.5px;
+        background-color: rgb(28, 28, 28);
     }
 }
