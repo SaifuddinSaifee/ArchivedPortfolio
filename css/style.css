@@ -498,13 +498,13 @@ h3 {
     }
 
     .navpill{
-        width: 70%;
+        width: 65%;
         padding: 10px;
     }
     .navpillcontent {
 
-        padding: 7.5px 22.5px;
-        font-size: 22px;
+        padding: 7px 22px;
+        font-size: 20px;
 
     }
     
