@@ -292,7 +292,7 @@ h3 {
         font-size: 7.5vh;
         color: rgba(0, 128, 255, 0.203);
     }
-    
+
     .navpillcontent {
 
         padding: 10px 30px;
@@ -427,7 +427,7 @@ h3 {
 /* # */
 /* # */
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
 
     .sec1 {
         display: flex;
@@ -475,7 +475,7 @@ h3 {
         margin: 0;
         text-align: center;
         font-family: "Poppins", sans-serif;
-        font-weight: 900;
+        font-weight: 900;1
         font-style: italic;
         font-size: 5vh;
         color: rgba(0, 128, 255, 0.203);
@@ -495,6 +495,22 @@ h3 {
     .devopsBlogImg {
         width: 100%;
         border-radius: inherit;
+    }
+
+    .navpill{
+        width: 70%;
+        padding: 10px;
+    }
+    .navpillcontent {
+
+        padding: 10px 30px;
+        font-size: 16px;
+
+    }
+    
+    .navpillcontent:hover {
+        background-color: white;
+        color: black;
     }
 }
 
