@@ -163,19 +163,9 @@ h3 {
 }
 
 .sec3 {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-.linksBar {
-    display: flex;
-
-    margin: 50px;
-    width: 400px;
-    height: 60px;
-    border-radius: 30px;
-    background-color: rgb(28, 28, 28);
+    align-items: center; */
 }
 
 .navpill {
@@ -203,7 +193,7 @@ h3 {
     display: inline-block;
     font-style: bold;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     color: rgb(109, 109, 109);
     border: 3px solid transparent;
     border-radius: 34px;
@@ -212,6 +202,31 @@ h3 {
 .navpillcontent:hover {
     background-color: white;
     color: black;
+}
+
+.linksBar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    margin: 50px auto;
+    padding: 10px;
+    width: 40%;
+    border-radius: 25px;
+    border: 5px solid #aed6dc;
+    background-color: #4a536b;
+}
+
+.fa-brands {
+    font-size: 32px;
+    color: white;
+    font-weight: 400px;
+    padding: 10px;
+}
+
+.fa-brands:hover {
+    border-radius: 8px;
+    background-color: #aed6dc7b;
 }
 
 /* ## */
@@ -246,12 +261,10 @@ h3 {
     }
 
     .navpillcontent {
-
         padding: 10px 30px;
         font-size: 21px;
-
     }
-    
+
     .navpillcontent:hover {
         background-color: white;
         color: black;
@@ -275,8 +288,6 @@ h3 {
         justify-content: center;
         align-items: center;
     }
-
-    
 
     .myName {
         text-align: left;
@@ -315,7 +326,6 @@ h3 {
         width: 637.5px;
         height: 267.75px;
         border-radius: 30px;
-
     }
 
     .projimg {
@@ -349,11 +359,20 @@ h3 {
     }
 
     .linksBar {
-        margin: 37.5px;
-        width: 375px;
-        height: 45px;
-        border-radius: 22.5px;
-        background-color: rgb(28, 28, 28);
+        margin: 37.5px auto;
+        padding: 7.5px;
+        border-radius: 18.75px;
+    }
+    .fa-brands {
+        font-size: 24px;
+        color: white;
+        font-weight: 400px;
+        padding: 7.5px;
+    }
+
+    .fa-brands:hover {
+        border-radius: 8px;
+        background-color: #aed6dc7b;
     }
 }
 
@@ -370,6 +389,7 @@ h3 {
 /* # */
 
 @media only screen and (max-width: 950px) {
+    /* tablet view */
 
     .sec1 {
         display: flex;
@@ -395,9 +415,7 @@ h3 {
         height: auto;
         border-radius: 30px;
         /* border: 2px solid red; */
-
     }
-
 
     .projimg {
         width: 100%;
@@ -432,30 +450,62 @@ h3 {
         border-radius: inherit;
     }
 
-    .navpill{
+    .navpill {
         width: 65%;
         padding: 10px;
     }
     .navpillcontent {
-
         padding: 7px 16px;
         font-size: 20px;
-
     }
-    
+
     .navpillcontent:hover {
         background-color: white;
         color: black;
     }
+
+    .linksBar {
+        width:max-content;
+        margin: 37.5px auto;
+        padding: 7.5px;
+        border-radius: 18.75px;
+    }
+    .fa-brands {
+        font-size: 24px;
+        color: white;
+        font-weight: 400px;
+        padding: 7.5px;
+        margin: auto 8px;
+    }
+
+    .fa-brands:hover {
+        border-radius: 8px;
+        background-color: #aed6dc7b;
+    }
 }
 
 @media only screen and (max-width: 580px) {
+    /* smartphone view */
+
+    body {
+        padding-bottom: 100px;
+    }
+
+    .projectCards {
+        background-color: white;
+        padding: 16px;
+        cursor: pointer;
+        margin: 75px auto;
+        /* width: 637.5px; */
+        width: auto;
+        height: auto;
+        border-radius: 16px;    /* 64 */
+        /* border: 2px solid red; */
+    }
 
     .navpill {
         display: flex;
         justify-content: space-between;
-        /* justify-content: space-around; */
-        /* justify-content: space-evenly; */
         align-items: center;
         position: fixed;
         top: auto;
@@ -472,26 +522,52 @@ h3 {
     }
 
     .navpillcontent {
-
         padding: 7px 10px;
         font-size: 20px;
         font-weight: 500;
-
     }
-    
+
     .navpillcontent:hover {
         background-color: white;
         color: black;
+    }
+
+    .linksBar {
+        width:max-content;
+        margin: 37.5px auto;
+        padding: 7.5px;
+        border-radius: 25px;
+    }
+    .fa-brands {
+        font-size: 24px;
+        color: white;
+        font-weight: 400px;
+        padding: 7.5px;
+        margin: auto 8px;
+    }
+
+    .fa-brands:hover {
+        border-radius: 8px;
+        background-color: #aed6dc7b;
     }
 }
 
 @media only screen and (max-width: 380px) {
     .navpillcontent {
-
         padding: 10px 7.5px;
         font-size: 18px;
         font-weight: 500;
+    }
 
+    .projectCards {
+        background-color: white;
+        padding: 12px;
+        cursor: pointer;
+        margin: 75px auto;
+        /* width: 637.5px; */
+        width: auto;
+        height: auto;
+        border-radius: 30px;
+        /* border: 2px solid red; */
     }
 }
-
