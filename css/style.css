@@ -57,54 +57,12 @@ body {
 }
 
 .sec1 {
-    /* background-color: gray; */
-    /* background-color: #d5fefd;
-    background-image: linear-gradient(315deg, #d5fefd 0%, #fffcff 74%); */
     background-image: url(https://raw.githubusercontent.com/SaifuddinSaifee/Portfolio/2e1f86943b31befce70e4b9298614f973d86a226/BackgroundCover.svg);
     background-size: cover;
     margin: auto;
     height: 950px;
     margin-bottom: 100px;
 }
-
-/* .navbar {
-    width: 100%;
-    height: inherit;
-    position: fixed;
-    text-align: right;
-    background: linear-gradient(
-        rgba(255, 255, 255, 0.171),
-        rgba(255, 255, 255, 0)
-    );
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    /* border: 2px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.144); 
-}
-
-.nav {
-    cursor: pointer;
-    background-color: transparent;
-    padding: 16px 30px;
-    margin-top: auto;
-    margin-bottom: 0;
-    font-size: 28px;
-    display: inline-block;
-    font-style: bold;
-    text-decoration: none;
-    font-family: "Roboto Mono", monospace;
-    color: rgb(109, 109, 109);
-    border: 3px solid transparent;
-}
-
-.nav:hover {
-    transition: 800ms;
-    color: rgb(0, 0, 0);
-    transition: 150ms;
-    border-bottom: 3px solid rgb(2, 186, 199);
-}
-*/
-
 
 .themeicon:hover {
     cursor: pointer;
@@ -226,7 +184,7 @@ h3 {
 
 .navpill {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     top: 60px;
@@ -310,12 +268,11 @@ h3 {
     }
 
     .sec1 {
-        /* background-color: gray; */
-        /* background-color: #d5fefd;
-        background-image: linear-gradient(315deg, #d5fefd 0%, #fffcff 74%); */
-        background-size: auto;
+        background-image: url(https://raw.githubusercontent.com/SaifuddinSaifee/Portfolio/2e1f86943b31befce70e4b9298614f973d86a226/BackgroundCover.svg);
+        background-size: cover;
         margin: auto;
         height: 712px;
+        margin-bottom: 75px;
     }
 
     .sec2 {
@@ -475,7 +432,7 @@ h3 {
         margin: 0;
         text-align: center;
         font-family: "Poppins", sans-serif;
-        font-weight: 900;1
+        font-weight: 900;
         font-style: italic;
         font-size: 5vh;
         color: rgba(0, 128, 255, 0.203);
@@ -503,7 +460,7 @@ h3 {
     }
     .navpillcontent {
 
-        padding: 7px 22px;
+        padding: 7px 2px;
         font-size: 20px;
 
     }
@@ -519,8 +476,8 @@ h3 {
     .navpill {
         display: flex;
         justify-content: space-between;
-        justify-content: space-around;
-        justify-content: space-evenly;
+        /* justify-content: space-around; */
+        /* justify-content: space-evenly; */
         align-items: center;
         position: fixed;
         top: auto;
@@ -541,7 +498,7 @@ h3 {
 
     .navpillcontent {
 
-        padding: 10px 10px;
+        padding: 7px 10px;
         font-size: 20px;
         font-weight: 500;
 
@@ -552,3 +509,14 @@ h3 {
         color: black;
     }
 }
+
+@media only screen and (max-width: 380px) {
+    .navpillcontent {
+
+        padding: 10px 7.5px;
+        font-size: 18px;
+        font-weight: 500;
+
+    }
+}
+
