@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Poppins:ital,wght@0,400;0,500;1,300;1,900&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Roboto+Serif:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Noto+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Poppins:ital,wght@0,400;0,500;1,300;1,900&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Roboto+Serif:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
 /* 
 font-family: 'Cinzel', serif; 500
 font-family: 'Poppins', sans-serif; 300i 400 500 900i
 font-family: 'Roboto Mono', monospace; 300 300i 400 400i 500
 font-family: 'Roboto Serif', serif; 300 300i 400 400i 500
+font-family: 'Noto Sans', sans-serif; 300 300i 400 400i 500 500i
 */
 
 * {
@@ -56,6 +57,12 @@ body {
     margin: auto;
 }
 
+.logoimg {
+    position: absolute;
+    width: 120px;
+    margin-top: 45px;
+}
+
 .sec1 {
     background-image: url(https://raw.githubusercontent.com/SaifuddinSaifee/Portfolio/2e1f86943b31befce70e4b9298614f973d86a226/BackgroundCover.svg);
     background-size: cover;
@@ -87,6 +94,40 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.mydatasec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myinfo {
+    box-shadow: rgb(0 0 0 / 10%) 0px 20px 25px, rgb(0 0 0 / 4%) 0px 10px 10px;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px 50px 150px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.infoText {
+    margin: 50px 20px auto 20px;
+    
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.hiiImage {
+    /* visibility: hidden; */
+    width: inherit;
+    border-radius: 0 0 300px 300px;
+    position: relative;
 }
 
 h3 {
@@ -227,6 +268,19 @@ h3 {
 .fa-brands:hover {
     border-radius: 8px;
     background-color: #aed6dc7b;
+}
+
+.contactform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    padding: 40px;
+    width: 50%;
+    border-radius: 40px;
+    background-color: #4a536b;
 }
 
 /* ## */
@@ -465,7 +519,7 @@ h3 {
     }
 
     .linksBar {
-        width:max-content;
+        width: max-content;
         margin: 37.5px auto;
         padding: 7.5px;
         border-radius: 18.75px;
@@ -499,7 +553,7 @@ h3 {
         /* width: 637.5px; */
         width: auto;
         height: auto;
-        border-radius: 16px;    /* 64 */
+        border-radius: 16px; /* 64 */
         /* border: 2px solid red; */
     }
 
@@ -533,7 +587,7 @@ h3 {
     }
 
     .linksBar {
-        width:max-content;
+        width: max-content;
         margin: 37.5px auto;
         padding: 7.5px;
         border-radius: 25px;
