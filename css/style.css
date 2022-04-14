@@ -753,6 +753,12 @@ text {
         border-radius: 8px;
         background-color: #aed6dc7b;
     }
+
+    .myinfo {
+        width: 100%;
+        max-width: 300px;
+
+    }
 }
 
 @media only screen and (max-width: 380px) {
