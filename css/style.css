@@ -98,6 +98,7 @@ a {
 
 .mydatasec {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -105,7 +106,7 @@ a {
 .myinfo {
     box-shadow: rgb(0 0 0 / 10%) 0px 20px 25px, rgb(0 0 0 / 4%) 0px 10px 10px;
     width: 300px;
-    height: 400px;
+    height: fit-content;
     background-color: rgb(255, 255, 255);
     border-radius: 50px 50px 150px 150px;
     display: flex;
@@ -117,8 +118,8 @@ a {
 
 .infoText {
     margin: 50px 20px auto 20px;
-    
     font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
     font-weight: 500;
     font-style: italic;
 }
@@ -428,6 +429,22 @@ form {
         border-radius: 8px;
         background-color: #aed6dc7b;
     }
+
+    .myinfo {
+        width: 225px;
+        border-radius: 37.5px 37.5px 112.5px 112.5px;
+
+    
+    }
+    
+    .infoText {
+        margin: 37.5px 15px auto 15px;
+        font-size: 12px;
+    }
+    
+    .hiiImage {
+        border-radius: 0 0 225px 225px;
+    }
 }
 
 /* # */
@@ -535,6 +552,32 @@ form {
     .fa-brands:hover {
         border-radius: 8px;
         background-color: #aed6dc7b;
+    }
+
+    .mydatasec {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .myinfo {
+        width: 225px;
+        border-radius: 37.5px 37.5px 112.5px 112.5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+    
+    .infoText {
+        margin: 37.5px 15px auto 15px;
+        font-size: 12px;
+    }
+    
+    .hiiImage {
+        border-radius: 0 0 225px 225px;
     }
 }
 
