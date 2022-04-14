@@ -307,6 +307,10 @@ form {
     background-color: #00a2edb3;
 }
 
+.phone:hover {
+    background-color: #7fba00b3;
+}
+
 .fa-envelope {
     font-size: 30px;
 }
@@ -653,11 +657,7 @@ text {
 
     .infoText {
         margin: 37.5px 15px auto 15px;
-        font-size: 12px;
-    }
-
-    .hiiImage {
-        border-radius: 0 0 225px 225px;
+        font-size: 16px;
     }
 
     .mailDetails {
@@ -665,6 +665,18 @@ text {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .myinfo {
+        box-shadow: rgb(0 0 0 / 10%) 0px 20px 25px, rgb(0 0 0 / 4%) 0px 10px 10px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50px 50px 150px 150px;
+    }
+    
+    .hiiImage {
+        border-radius: 0 0 225px 225px;
+
     }
 }
 
@@ -760,3 +772,4 @@ text {
         /* border: 2px solid red; */
     }
 }
+
