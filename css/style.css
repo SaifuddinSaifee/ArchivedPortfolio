@@ -64,7 +64,8 @@ body {
 }
 
 .sec1 {
-    background-image: url(https://raw.githubusercontent.com/SaifuddinSaifee/Portfolio/2e1f86943b31befce70e4b9298614f973d86a226/BackgroundCover.svg);
+    background-image: url(/cover1080.png);
+    /* background-image: url(https://raw.githubusercontent.com/SaifuddinSaifee/Portfolio/2e1f86943b31befce70e4b9298614f973d86a226/BackgroundCover.svg); */
     background-size: cover;
     margin: auto;
     height: 950px;
@@ -371,7 +372,8 @@ text {
     }
 
     .sec1 {
-        background-image: url(https://raw.githubusercontent.com/SaifuddinSaifee/Portfolio/2e1f86943b31befce70e4b9298614f973d86a226/BackgroundCover.svg);
+        /* background-image: url(https://raw.githubusercontent.com/SaifuddinSaifee/Portfolio/2e1f86943b31befce70e4b9298614f973d86a226/BackgroundCover.svg); */
+        background-image: url(/cover720.png);
         background-size: cover;
         margin: auto;
         height: 712px;
