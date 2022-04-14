@@ -300,7 +300,7 @@ form {
 }
 
 .gmail:hover {
-    background-color: #ff9eaed1;
+    background-color: #f04e1fb3;
 }
 
 .outlook:hover {
@@ -309,6 +309,10 @@ form {
 
 .phone:hover {
     background-color: #7fba00b3;
+}
+
+.CV:hover {
+    background-color: #FFB900b3;
 }
 
 .fa-envelope {
