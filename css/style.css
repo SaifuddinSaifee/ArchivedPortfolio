@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Noto+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Poppins:ital,wght@0,400;0,500;1,300;1,900&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Roboto+Serif:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Noto+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Poppins:ital,wght@0,400;0,500;1,300;1,900&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Roboto+Serif:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Varela+Round&display=swap");
 /* 
 font-family: 'Cinzel', serif; 500
 font-family: 'Poppins', sans-serif; 300i 400 500 900i
 font-family: 'Roboto Mono', monospace; 300 300i 400 400i 500
 font-family: 'Roboto Serif', serif; 300 300i 400 400i 500
 font-family: 'Noto Sans', sans-serif; 300 300i 400 400i 500 500i
+font-family: 'Varela Round', sans-serif;
 */
 
 * {
@@ -112,12 +113,11 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .infoText {
     margin: 50px 20px auto 20px;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-size: 16px;
     font-weight: 500;
     font-style: italic;
@@ -275,7 +275,46 @@ form {
     padding: 40px;
     width: 50%;
     border-radius: 40px;
-    background-color: #4a536b;
+    background-color: #ffffff;
+    border: 4px solid #aed6dc;
+}
+
+.mailDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mailBox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+    width: 300px;
+    height: fit-content;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-radius: 29px;
+    -webkit-box-shadow: 0px 0px 25px 5px rgba(128, 128, 128, 0.34);
+    box-shadow: 0px 0px 25px 5px rgba(128, 128, 128, 0.34);
+}
+
+.gmail:hover {
+    background-color: #ff9eaed1;
+}
+
+.outlook:hover {
+    background-color: #00a2edb3;
+}
+
+.fa-envelope {
+    font-size: 30px;
+}
+
+text {
+    margin: 10px;
+    font-size: 18px;
+    font-family: "Varela Round", sans-serif;
 }
 
 /* ## */
@@ -431,17 +470,47 @@ form {
     .myinfo {
         width: 225px;
         border-radius: 37.5px 37.5px 112.5px 112.5px;
-
-    
     }
-    
+
     .infoText {
         margin: 37.5px 15px auto 15px;
         font-size: 12px;
     }
-    
+
     .hiiImage {
         border-radius: 0 0 225px 225px;
+    }
+
+    .mailBox {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 15px;
+        width: 225px;
+        height: fit-content;
+        padding: 7.5px 15px;
+        background-color: #ffffff;
+        border-radius: 21.75px;
+        -webkit-box-shadow: 0px 0px 25px 5px rgba(128, 128, 128, 0.34);
+        box-shadow: 0px 0px 25px 5px rgba(128, 128, 128, 0.34);
+    }
+
+    .gmail:hover {
+        background-color: #ff9eaed1;
+    }
+
+    .outlook:hover {
+        background-color: #00a2edb3;
+    }
+
+    .fa-envelope {
+        font-size: 22.5px;
+    }
+
+    text {
+        margin: 7.5px;
+        font-size: 13.5px;
+        font-family: "Varela Round", sans-serif;
     }
 }
 
@@ -457,7 +526,7 @@ form {
 /* # */
 /* # */
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 970px) {
     /* tablet view */
 
     .sec1 .w80 {
@@ -580,16 +649,22 @@ form {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-    
     }
-    
+
     .infoText {
         margin: 37.5px 15px auto 15px;
         font-size: 12px;
     }
-    
+
     .hiiImage {
         border-radius: 0 0 225px 225px;
+    }
+
+    .mailDetails {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
