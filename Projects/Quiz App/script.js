@@ -46,41 +46,68 @@ const option_a = document.getElementById("option_a");
 const option_b = document.getElementById("option_b");
 const option_c = document.getElementById("option_c");
 const option_d = document.getElementById("option_d");
-
-const submitBtn = document.getElementById('submitBtn');
+const allOptions = document.querySelectorAll(".answer");
+const submitBtn = document.getElementById("submitBtn");
 
 let question_number = 0;
+let answer = undefined;
+let score = 0;
 
 loadQuiz();
 
 function loadQuiz() {
-    const currentQuiz = quizData [question_number];
-    
+    const currentQuiz = quizData[question_number];
+
     question.innerText = currentQuiz.question;
     option_a.innerText = currentQuiz.a;
     option_b.innerText = currentQuiz.b;
     option_c.innerText = currentQuiz.c;
     option_d.innerText = currentQuiz.d;
-    console.log("Hello");
 }
 
 function getSelected() {
-    const answerEl = document.querySelectorAll(".answer");
+    // console.log(allOptions);
+    let answer = undefined;
 
-    answerEl.forEach((answerEl) => {
-        console.log(answerEl.value);
-    })
+    allOptions.forEach((answerEl) => {
+        // console.log(answerEl.checked);
+        if (answerEl.checked) {
+            answer = answerEl.id;
+        }
+    });
+    return answer;
 }
 
-submitBtn.addEventListener('click', () => {
-    question_number++;
-    getSelected()
+function DeselectAnswers() {
+    allOptions.forEach((answerEl) => {
+        answerEl.checked = false;
+    });
+}
 
-    // if (question_number < quizData.length) {
-    //     loadQuiz();
-    // } else {
-    //     alert("You have complete the quiz!")
-    // }
+submitBtn.addEventListener("click", () => {
+    const answer = getSelected();
+    console.log(answer);
+    console.log(quizData[question_number].correct);
 
-    // loadQuiz();
-})
+    if (answer == undefined) {
+        alert("Select an option!");
+    } else if (answer == quizData[question_number].correct) {
+        score++;
+        alert("Score increased");
+        question_number++;
+        if (question_number < quizData.length) {
+            loadQuiz();
+        } else {
+            alert("End of quiz, your score is {score}");
+        }
+        DeselectAnswers();
+    } else {
+        question_number++;
+        if (question_number < quizData.length) {
+            loadQuiz();
+        } else {
+            alert("End of quiz, your score is: " + score);
+        }
+        DeselectAnswers();
+    }
+});
