@@ -87,13 +87,13 @@ function DeselectAnswers() {
 submitBtn.addEventListener("click", () => {
     const answer = getSelected();
     console.log(answer);
-    console.log(quizData[question_number].correct);
+    console.log(quizData[question_number].correct.id);
 
     if (answer == undefined) {
         alert("Select an option!");
-    } else if (answer == quizData[question_number].correct) {
+    } else if (answer == quizData[question_number].correct.id) {
         score++;
-        alert("Score increased");
+        // alert("Score increased");
         question_number++;
         if (question_number < quizData.length) {
             loadQuiz();
@@ -101,7 +101,7 @@ submitBtn.addEventListener("click", () => {
             alert("End of quiz, your score is {score}");
         }
         DeselectAnswers();
-    } else {
+    } else if (answer != quizData[question_number].correct.id) {
         question_number++;
         if (question_number < quizData.length) {
             loadQuiz();
