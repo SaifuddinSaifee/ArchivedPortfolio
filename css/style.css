@@ -100,7 +100,7 @@ a {
 }
 
 .myinfo {
-    border-top: 4px solid #FFB900b3;
+    border-top: 4px solid #ffb900b3;
     border-right: 2px solid #ffbb0000;
     border-left: 2px solid #ffbb0000;
     border-bottom: 2px solid #ffbb0000;
@@ -117,10 +117,10 @@ a {
 
 .myinfo:hover {
     transition: 750ms;
-    border-top: 4px solid #FFB900b3;
-    border-right: 2px solid #FFB900b3;
-    border-left: 2px solid #FFB900b3;
-    border-bottom: 2px solid #FFB900b3;
+    border-top: 4px solid #ffb900b3;
+    border-right: 2px solid #ffb900b3;
+    border-left: 2px solid #ffb900b3;
+    border-bottom: 2px solid #ffb900b3;
 }
 
 .infoText {
@@ -238,6 +238,10 @@ a {
     color: black;
 }
 
+.mobile-icon {
+    display: none;
+}
+
 .linksBar {
     display: flex;
     justify-content: space-evenly;
@@ -310,7 +314,7 @@ form {
 }
 
 .CV:hover {
-    background-color: #FFB900b3;
+    background-color: #ffb900b3;
 }
 
 .fa-envelope {
@@ -706,7 +710,7 @@ text {
 
     .navpill {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         position: fixed;
         top: auto;
@@ -726,11 +730,27 @@ text {
         padding: 7px 10px;
         font-size: 20px;
         font-weight: 500;
+        display: none;
     }
 
     .navpillcontent:hover {
         background-color: white;
         color: black;
+    }
+
+    .mobile-icon {
+        display: inline;
+    }
+
+    .fa-igloo,
+    .fa-briefcase,
+    .fa-phone {
+        font-size: 20px;
+        padding: 16px;
+        border-radius: 50%;
+        background-color: white;
+        color: black;
+        border: 3px solid#ffb2a8;
     }
 
     .linksBar {
@@ -755,7 +775,6 @@ text {
     .myinfo {
         width: 100%;
         max-width: 300px;
-
     }
 }
 
@@ -776,5 +795,11 @@ text {
         height: auto;
         border-radius: 30px;
         /* border: 2px solid red; */
+    }
+
+    .fa-igloo,
+    .fa-briefcase,
+    .fa-phone {
+        font-size: 0.75rem;
     }
 }
